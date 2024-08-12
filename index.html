@@ -3,21 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Page</title>
-    <link href="CSS/lib/flatly_bootswatch_theme.css" rel="stylesheet">
+    <title>Chatelaine Ventures</title>
+    <link href="src/css/lib/flatly_bootswatch_theme.css" rel="stylesheet">
 </head>
-<body class="bg-dark">
-    <div class="d-flex justify-content-center align-items-center vh-100 flex-wrap col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3" id="divContent">
-        <div class="card col-11" id="divWelcome">
-            <div class="card-body">
-                <h1 class="col-12 text-center">Hello World!</h1>
-                <h2 class="col-12 text-center"><span>&#9888;</span></h2>
-                <p class="col-12 text-center">Welcome to this website! We are still in development...</p>
+<body style="background-color:#8FbC8F;">
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background-color:#800080;">
+        <div class="container-fluid">
+            <a id="navbarBrandHome" class="navbar-brand active" href="#">Chatelaine Ventures</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navDash" class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a id="navAbout" class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navServices" class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
+                        <div class="dropdown-menu">
+                            <a id="navTipsTricks" class="dropdown-item" href="#">Tips & Tricks</a>
+                            <a id="navBlog" class="dropdown-item" href="#">Blog</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="divMain">
+        <div class="d-flex justify-content-center align-items-center vh-100 flex-wrap col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3" id="divContent">
+            <div id="divHome" class="card col-11">
+                <div class="card-header">
+                    <h1 class="text-center">Home</h1>
+                </div>
+                <div class="card-body">
+                    <h2 class="col-12 text-center"><span>&#9888;</span></h2>
+                    <p class="col-12 text-center">Welcome to Chatelaine Ventures! We are still in development...</p>
+                </div>
+            </div>
+
+            <div id="divAbout" class="card col-11" style="display: none;">
+                <div class="card-header">
+                    <h1 class="text-center">About</h1>
+                </div>
+                <div class="card-body">
+                    <p class="col-12 text-center">An in development project about getting stuff done!</p>
+                </div>
+            </div>
+
+            <div id="divServices" class="card col-11" style="display: none;">
+                <div class="card-header">
+                    <h1 class="text-center">Services</h1>
+                </div>
+                <div class="card-body">
+                    <p class="col-12 text-center">This will show what kind of services we provide and a way to contact us!</p>
+                </div>
+            </div>
+
+            <div id="divTipsTricks" class="card col-11" style="display: none;">
+                <div class="card-header">
+                    <h1 class="text-center">Tips & Tricks</h1>
+                </div>
+                <div class="card-body">
+                    <p class="col-12 text-center">This will explain some neat little tips and tricks that we've come up with and how you can use them yourself!</p>
+                </div>
+            </div>
+
+            <div id="divBlog" class="card col-11" style="display: none;">
+                <div class="card-header">
+                    <h1 class="text-center">Blog</h1>
+                </div>
+                <div class="card-body">
+                    <p class="col-12 text-center">This will be where you can read up on our latest blog!</p>
+                </div>
             </div>
         </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="./src/js/navbar.js"></script>
 </body>
 </html>
