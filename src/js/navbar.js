@@ -1,14 +1,18 @@
-// navbarctions
+// Navigation Bar actions
 
-// TODO: figure out how to switch cards properlynd not have refresh go back to home
-
-// $('#navAbout').on('click', function() {
-//     $('#divHome').slideUp(function () {
-//         $('#divAbout').slideDown();
-//     });
-//     $('#navbarBrandHome').removeClass('active');
-//     $('#navAbout').addClass('active');
-// })
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
 
 $('#navbarBrandHome').on('click', function() {
     if ($('#navAbout').hasClass('active')) {
