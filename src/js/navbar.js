@@ -17,26 +17,26 @@ for (i = 0; i < coll.length; i++) {
 
 $('#navbarBrandHome').on('click', function() {
     if ($('#navAbout').hasClass('active')) {
-        $('#divAbout').slideUp(function() {
-            $('#divHome').slideDown();
+        $('#divAbout').slideToggle(function() {
+            $('#divHome').fadeToggle();
         })
         $('#navAbout').removeClass('active');
         $('#navbarBrandHome').addClass('active');
     } else if ($('#navServices').hasClass('active')) {
-        $('#divServices').slideUp(function() {
-            $('#divHome').slideDown();
+        $('#divServices').slideToggle(function() {
+            $('#divHome').fadeToggle();
         })
         $('#navServices').removeClass('active');
         $('#navbarBrandHome').addClass('active');
     } else if ($('#navTipsTricks').hasClass('active')) {
-        $('#divTipsTricks').slideUp(function() {
-            $('#divHome').slideDown();
+        $('#divTipsTricks').slideToggle(function() {
+            $('#divHome').fadeToggle();
         })
         $('#navTipsTricks').removeClass('active');
         $('#navbarBrandHome').addClass('active');
     } else if ($('#navBlog').hasClass('active')) {
-        $('#divBlog').slideUp(function() {
-            $('#divHome').slideDown();
+        $('#divBlog').slideToggle(function() {
+            $('#divHome').fadeToggle();
         })
         $('#navBlog').removeClass('active');
         $('#navbarBrandHome').addClass('active');
@@ -45,26 +45,26 @@ $('#navbarBrandHome').on('click', function() {
 
 $('#navAbout').on('click', function() {
     if ($('#navbarBrandHome').hasClass('active')) {
-        $('#divHome').slideUp(function() {
-            $('#divAbout').slideDown();
+        $('#divHome').fadeToggle(function() {
+            $('#divAbout').slideToggle();
         })
         $('#navbarBrandHome').removeClass('active');
         $('#navAbout').addClass('active');
     } else if ($('#navServices').hasClass('active')) {
-        $('#divServices').slideUp(function() {
-            $('#divAbout').slideDown();
+        $('#divServices').slideToggle(function() {
+            $('#divAbout').slideToggle();
         })
         $('#navServices').removeClass('active');
         $('#navAbout').addClass('active');
     } else if ($('#navTipsTricks').hasClass('active')) {
-        $('#divTipsTricks').slideUp(function() {
-            $('#divAbout').slideDown();
+        $('#divTipsTricks').slideToggle(function() {
+            $('#divAbout').slideToggle();
         })
         $('#navTipsTricks').removeClass('active');
         $('#navAbout').addClass('active');
     } else if ($('#navBlog').hasClass('active')) {
-        $('#divBlog').slideUp(function() {
-            $('#divAbout').slideDown();
+        $('#divBlog').slideToggle(function() {
+            $('#divAbout').slideToggle();
         })
         $('#navBlog').removeClass('active');
         $('#navAbout').addClass('active');
@@ -73,26 +73,26 @@ $('#navAbout').on('click', function() {
 
 $('#navServices').on('click', function() {
     if ($('#navbarBrandHome').hasClass('active')) {
-        $('#divHome').slideUp(function() {
-            $('#divServices').slideDown();
+        $('#divHome').fadeToggle(function() {
+            $('#divServices').slideToggle();
         })
         $('#navbarBrandHome').removeClass('active');
         $('#navServices').addClass('active');
     } else if ($('#navAbout').hasClass('active')) {
-        $('#divAbout').slideUp(function() {
-            $('#divServices').slideDown();
+        $('#divAbout').slideToggle(function() {
+            $('#divServices').slideToggle();
         })
         $('#navAbout').removeClass('active');
         $('#navServices').addClass('active');
     } else if ($('#navTipsTricks').hasClass('active')) {
-        $('#divTipsTricks').slideUp(function() {
-            $('#divServices').slideDown();
+        $('#divTipsTricks').slideToggle(function() {
+            $('#divServices').slideToggle();
         })
         $('#navTipsTricks').removeClass('active');
         $('#navServices').addClass('active');
     } else if ($('#navBlog').hasClass('active')) {
-        $('#divBlog').slideUp(function() {
-            $('#divServices').slideDown();
+        $('#divBlog').slideToggle(function() {
+            $('#divServices').slideToggle();
         })
         $('#navBlog').removeClass('active');
         $('#navServices').addClass('active');
@@ -101,26 +101,26 @@ $('#navServices').on('click', function() {
 
 $('#navTipsTricks').on('click', function() {
     if ($('#navbarBrandHome').hasClass('active')) {
-        $('#divHome').slideUp(function() {
-            $('#divTipsTricks').slideDown();
+        $('#divHome').fadeToggle(function() {
+            $('#divTipsTricks').slideToggle();
         })
         $('#navbarBrandHome').removeClass('active');
         $('#navTipsTricks').addClass('active');
     } else if ($('#navAbout').hasClass('active')) {
-        $('#divAbout').slideUp(function() {
-            $('#divTipsTricks').slideDown();
+        $('#divAbout').slideToggle(function() {
+            $('#divTipsTricks').slideToggle();
         })
         $('#navAbout').removeClass('active');
         $('#navTipsTricks').addClass('active');
     } else if ($('#navServices').hasClass('active')) {
-        $('#divServices').slideUp(function() {
-            $('#divTipsTricks').slideDown();
+        $('#divServices').slideToggle(function() {
+            $('#divTipsTricks').slideToggle();
         })
         $('#navServices').removeClass('active');
         $('#navTipsTricks').addClass('active');
     } else if ($('#navBlog').hasClass('active')) {
-        $('#divBlog').slideUp(function() {
-            $('#divTipsTricks').slideDown();
+        $('#divBlog').slideToggle(function() {
+            $('#divTipsTricks').slideToggle();
         })
         $('#navBlog').removeClass('active');
         $('#navTipsTricks').addClass('active');
@@ -129,26 +129,26 @@ $('#navTipsTricks').on('click', function() {
 
 $('#navBlog').on('click', function() {
     if ($('#navbarBrandHome').hasClass('active')) {
-        $('#divHome').slideUp(function() {
-            $('#divBlog').slideDown();
+        $('#divHome').fadeToggle(function() {
+            $('#divBlog').slideToggle();
         })
         $('#navbarBrandHome').removeClass('active');
         $('#navBlog').addClass('active');
     } else if ($('#navAbout').hasClass('active')) {
-        $('#divAbout').slideUp(function() {
-            $('#divBlog').slideDown();
+        $('#divAbout').slideToggle(function() {
+            $('#divBlog').slideToggle();
         })
         $('#navAbout').removeClass('active');
         $('#navBlog').addClass('active');
     } else if ($('#navServices').hasClass('active')) {
-        $('#divServices').slideUp(function() {
-            $('#divBlog').slideDown();
+        $('#divServices').slideToggle(function() {
+            $('#divBlog').slideToggle();
         })
         $('#navServices').removeClass('active');
         $('#navBlog').addClass('active');
     } else if ($('#navTipsTricks').hasClass('active')) {
-        $('#divTipsTricks').slideUp(function() {
-            $('#divBlog').slideDown();
+        $('#divTipsTricks').slideToggle(function() {
+            $('#divBlog').slideToggle();
         })
         $('#navTipsTricks').removeClass('active');
         $('#navBlog').addClass('active');
