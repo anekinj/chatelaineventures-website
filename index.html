@@ -8,34 +8,34 @@
     <link href="src/css/lib/flatly_bootswatch_theme.css" rel="stylesheet">
 </head>
 <body style="background-color:#ADD8E6;">
-    <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background-color:#471657;">
-        <div class="container-fluid">
-            <a id="navbarBrandHome" class="navbar-brand active navbtn" href="#" style="font-family: Cheque;">Chatelaine Ventures</a>
-            <button class="navbar-toggler collapsible" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="navDash" class="collapse navbar-collapse" style="overflow: hidden; display:none; font-family: Cheque;">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a id="navAbout" class="nav-link navbtn" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="navServices" class="nav-link navbtn" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="navTipsTricks" class="nav-link navbtn" href="#">Tips & Tricks</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="navBlog" class="nav-link navbtn" href="#">Blog</a>
-                    </li>
-                </ul>
+    <div id="divMain" class="d-flex flex-column vh-100">
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background-color:#471657;">
+            <div class="container-fluid">
+                <a id="navbarBrandHome" class="navbar-brand active navbtn" href="#" style="font-family: Cheque;">Chatelaine Ventures</a>
+                <button class="navbar-toggler collapsible" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navDash" class="collapse navbar-collapse" style="overflow: hidden; display:none; font-family: Cheque;">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a id="navAbout" class="nav-link navbtn" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="navServices" class="nav-link navbtn" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="navTipsTricks" class="nav-link navbtn" href="#">Tips & Tricks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="navBlog" class="nav-link navbtn" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-
-    <div id="divMain">
-        <div id="divContent" style="font-family: Cheque;" class="d-flex justify-content-center align-items-center vh-100 col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-            <div id="divHome" class="col-11">
+        </nav>
+    
+        <div id="divContent" class="d-flex justify-content-center align-items-center pt-5 pb-5 col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+            <div id="divHome" style="font-family: Cheque;" class="col-11">
                 <div class="d-flex flex-column">
                     <div class="align-self-start">
                         <img src="src/images/logo_transparent.png" alt="Chatelaine Ventures" style="height: auto; max-width: 100%;">
@@ -46,8 +46,8 @@
                     </div>
                 </div>
             </div>
-
-            <div id="divAbout" class="card col-11" style="display: none;">
+    
+            <div id="divAbout" class="card col-11" style="display: none; font-family: Cheque;">
                 <div class="card-header">
                     <h1 class="text-center">About</h1>
                 </div>
@@ -55,24 +55,27 @@
                     <p class="col-12 text-center">An in development project about getting stuff done!</p>
                 </div>
             </div>
-
-            <div id="divServices" class="card col-11" style="display: none;">
+    
+            <div id="divServices" class="card col-11" style="display: none; font-family: Cheque;">
                 <div class="card-header">
                     <h1 class="text-center">Services</h1>
                 </div>
-                <div class="card-body text-center">
+                <div class="card-body text-center d-flex flex-column">
                     <p>It's a risky business adulting, running a home, and navigating life.</p>
                     <p>Chatelaine Ventures hopes to provide you with peace of mind without condescension.</p>
                     <p>Sometimes it's hard to know exactly what needs to be done. It can be difficult to describe a problem when you don't really understand it. Whether you woke up and noticed your toilet leaking, you've moved and you need help packing or supervising movers, you own a rental and need help with cleaning and maintenance, or you're drowning in your own sticky notes of things to be done, we are here for you.</p>
-                    <p>You can contact us at <SCRIPT LANGUAGE="JavaScript">user = 'cv';site = 'chatelaineventures.com';document.write('<a href=\"mailto:' + user + '@' + site + '\">');document.write(user + '@' + site + '</a>');</SCRIPT>. You can also find us on Instagram @chatelaineventures.</p>
                     <p>Once we have received your message, we will continue with those lines of communication and/or offer a phone number to reach us where we can directly communicate about your individual needs. We are on your team and want to see you succeed!</p>
                     <p>Pricing will vary, but you will know your options throughout our connection.</p>
                     <p>What we do not want is for you to feel like you are alone in this dangerous thing called life.</p>
                     <p>Chatelaine Ventures wants to support you in being the master or mistress of your domain, home, and life; in other words, your castle.</p>
+                    <p>You can contact us at:</p>
+                    <p><SCRIPT LANGUAGE="JavaScript">user = 'cv';site = 'chatelaineventures.com';document.write('<b><a style=\"color: #471657\" href=\"mailto:' + user + '@' + site + '\">');document.write(user + '@' + site + '</a></b>');</SCRIPT></p>
+                    <p>We're also on Instagram:</p>
+                    <p><b style="color: #471657;">@chatelaineventures</b></p>
                 </div>
             </div>
-
-            <div id="divTipsTricks" class="card col-11" style="display: none;">
+    
+            <div id="divTipsTricks" class="card col-11" style="display: none; font-family: Cheque;">
                 <div class="card-header">
                     <h1 class="text-center">Tips & Tricks</h1>
                 </div>
@@ -80,8 +83,8 @@
                     <p class="col-12 text-center">This will explain some neat little tips and tricks that we've come up with and how you can use them yourself!</p>
                 </div>
             </div>
-
-            <div id="divBlog" class="card col-11" style="display: none;">
+    
+            <div id="divBlog" class="card col-11" style="display: none; font-family: Cheque;">
                 <div class="card-header">
                     <h1 class="text-center">Blog</h1>
                 </div>
@@ -91,7 +94,7 @@
             </div>
         </div>
     </div>
-
+    
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
